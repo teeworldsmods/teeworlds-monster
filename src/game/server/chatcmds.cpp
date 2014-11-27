@@ -118,7 +118,7 @@ void CGameContext::ExecuteCommand(int ClientID, const char* pCmd)
 
         SendChatTarget(ClientID, aBuf);
     }
-    else if(!str_comp_nocase_num(pCmd, "dmg", 3))
+    else if(!str_comp_nocase_num(pCmd, "dmg ", 4))
     {
         int Amount;
         if(sscanf(pCmd, "dmg %d", &Amount) != 1)
